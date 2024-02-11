@@ -1,10 +1,15 @@
 import { Button } from '@/components/ui/button'
+import { UserButton } from '@clerk/nextjs'
 
 export default function Home() {
   return (
-    <main>
-      Hello Board!
-      <Button>Click me!</Button>
-    </main>
+    <div className="flex flex-col gap-y-4">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ab.
+      </div>
+      <div>
+        <UserButton />
+      </div>
+    </div>
   )
 }
